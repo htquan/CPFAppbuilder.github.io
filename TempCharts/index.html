@@ -95,11 +95,11 @@
 	  
     }
  
-	//響應式圖表
+	//Biểu Đồ
 	$(window).resize(function() {
 	    drawChart();
 	});
-	// 攝氏轉換
+	// Chuyển sang độ C
 	function toCelsius(value) {
 		var resistance = parseFloat((1023-value) * 10000 / value);
 		var temperature = 1 / (Math.log(resistance / 10000) / 3975+1 / 298.15) - 273.15;
@@ -140,17 +140,17 @@
 	<div class="row" style="margin: 0 auto;">
 		<div align="center" class="col-xs-12">
 			<div class="col-xs-4">
-				<p>一</p>
-				<button class="button" onclick="readTemps()">讀取溫度</button>
+				<p>1</p>
+				<button class="button" onclick="readTemps()">Đọc Nhiệt Độ</button>
 				<p id="temp" style="text-align:center; font-size: 16px;"></p>
 			</div>
 			<div class="col-xs-4">
-				<p>二</p>
-				<button class="button" onclick="upload()">上傳資料</button>
+				<p>2</p>
+				<button class="button" onclick="upload()">Tải dữ liệu lên</button>
 			</div>
 			<div class="col-xs-4">
-				<p>三</p>
-				<button class="button" onclick="download()">製作圖表</button>
+				<p>3</p>
+				<button class="button" onclick="download()">Vẽ Biểu Đồ</button>
 			</div>
 		</div>
 		<div align="center" class="col-xs-12">
