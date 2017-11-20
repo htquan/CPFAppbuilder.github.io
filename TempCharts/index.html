@@ -52,8 +52,8 @@
 	function drawChart() {
 	
       var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Time of Day');			// 定義X軸的型態及欄位名稱
-      data.addColumn('number', 'Temperature Data');		
+      data.addColumn('string', 'Thời gian');			// 定義X軸的型態及欄位名稱
+      data.addColumn('number', 'Dữ Liệu Nhiệt Độ');		
 	  
 	  var store = aop.getStore("store1");
 	  var result = JSON.parse(store);
@@ -75,7 +75,7 @@
         vAxes: {
           // Adds titles to each axis.
           0: {
-			title: 'Temps (Celsius)',
+			title: 'Nhiệt độ (Celsius)',
 			titleTextStyle: {fontSize: 26}
 		  }
         },
