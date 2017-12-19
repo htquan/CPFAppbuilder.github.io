@@ -166,9 +166,9 @@
 			document.getElementById("elecValue").innerHTML = Math.round(0.5*elecValue);
 			
 			// 切換電流狀態
-			if (elecValue >= 200 ) {
+			if (elecValue >= 160 ) {
 				document.getElementById("elecStatus").src= './images/warn.png';
-			}else if ( elecValue >= 300 ) {
+			}else if ( elecValue >= 260 ) {
 				document.getElementById("elecStatus").src= './images/danger.png';
 			}else {
 				document.getElementById("elecStatus").src= './images/nice.png';
@@ -189,7 +189,7 @@
 			// 切換一氧化碳狀態
 			if (COValue >= 50 ) {
 				document.getElementById("COStatus").src= './images/warn.png';
-			}else if ( elecValue >= 500 ) {
+			}else if ( COValue >= 300 ) {
 				document.getElementById("COStatus").src= './images/danger.png';
 			}else {
 				document.getElementById("COStatus").src= './images/nice.png';
