@@ -167,9 +167,9 @@
 			document.getElementById("elecValue").innerHTML = elecValue;
 			
 			// 切換電流狀態
-			if (elecValue >= 80 ) {
+			if (elecValue >= 100 ) {
 				document.getElementById("elecStatus").src= './images/warn.png';
-			}else if ( elecValue >= 120 ) {
+			}else if ( elecValue >= 180 ) {
 				document.getElementById("elecStatus").src= './images/danger.png';
 			}else {
 				document.getElementById("elecStatus").src= './images/nice.png';
