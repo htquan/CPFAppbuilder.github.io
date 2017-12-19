@@ -42,12 +42,12 @@
 				<img src="./images/elec.png" class="sensors">
 			</div>
 			<div class="analog_title">
-				<h2>Electricity</h2>
+				<h2>Noise</h2>
 			</div>
 			<hr>
 			<div class="analog_value">
 			<img src="./images/warn.png" id="elecStatus" class="status" />
-				<span id="elecValue">390</span><font class="unit">mA</font>
+				<span id="elecValue">390</span><font class="unit">dB</font>
 			</div>
 		</div>
 		<div class="analog">
@@ -166,9 +166,9 @@
 			document.getElementById("elecValue").innerHTML = elecValue;
 			
 			// 切換電流狀態
-			if (elecValue >= 500 ) {
+			if (elecValue >= 100 ) {
 				document.getElementById("elecStatus").src= './images/warn.png';
-			}else if ( elecValue >= 1000 ) {
+			}else if ( elecValue >= 200 ) {
 				document.getElementById("elecStatus").src= './images/danger.png';
 			}else {
 				document.getElementById("elecStatus").src= './images/nice.png';
