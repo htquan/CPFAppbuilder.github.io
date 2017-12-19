@@ -163,7 +163,7 @@
 			
 			// 電流感測
 			elecValue = cpf.get("a2");
-			document.getElementById("elecValue").innerHTML = 0.5*elecValue;
+			document.getElementById("elecValue").innerHTML = Math.round(0.5*elecValue);
 			
 			// 切換電流狀態
 			if (elecValue >= 200 ) {
