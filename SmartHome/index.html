@@ -163,12 +163,13 @@
 			
 			// 電流感測
 			elecValue = cpf.get("a2");
-			document.getElementById("elecValue").innerHTML = 0.5*elecValue;
+			elecValue = 0.5*elecValue;
+			document.getElementById("elecValue").innerHTML = elecValue;
 			
 			// 切換電流狀態
-			if (elecValue >= 100 ) {
+			if (elecValue >= 80 ) {
 				document.getElementById("elecStatus").src= './images/warn.png';
-			}else if ( elecValue >= 200 ) {
+			}else if ( elecValue >= 120 ) {
 				document.getElementById("elecStatus").src= './images/danger.png';
 			}else {
 				document.getElementById("elecStatus").src= './images/nice.png';
